@@ -10,6 +10,10 @@ namespace Funder.Repository
     {
         public DbSet<User> Users{ get; set; }
         public DbSet<Project> Projects { get; set; }
+        public DbSet<Media> Medias { get; set; }
+        public DbSet<Reward> Rewards { get; set; }
+        public DbSet<ProjectCategories> ProjectCategories { get; set; }
+
 
 
 
