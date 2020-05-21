@@ -12,7 +12,7 @@ namespace Funder.Models
         public int ProjectId { get; set; }
         public string ProjectName { get; set; }
         public string Description { get; set; }
-        public string Goal { get; set; }
+        public decimal Goal { get; set; }
         public string Progress { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }  

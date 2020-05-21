@@ -68,24 +68,6 @@ namespace Funder.Services
             }
             return false;
         }
-
-        //public bool SoftDeleteUserById(int id)
-        //{
-        //    User user = db.Users.Find(id);
-        //    if (user != null)
-        //    {
-        //        user.Active = false;
-        //        db.SaveChanges();
-        //        return true;
-        //    }
-        //    return false;
-        //}
-
-        //public List<User> GetAllUsers()
-        //{
-        //    return db.Users.ToList();
-        //}
-
     }
 }
    

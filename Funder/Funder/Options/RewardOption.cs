@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Funder.Options
 {
-    class RewardOption
+   public class RewardOption
     {
 
         public string Description { get; set; }
