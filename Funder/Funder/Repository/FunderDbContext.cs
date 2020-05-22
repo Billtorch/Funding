@@ -3,7 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
-
 namespace Funder.Repository
 {
     public class FunderDbContext : DbContext
@@ -17,18 +16,23 @@ namespace Funder.Repository
 
 
 
-        private readonly string connectionString =
+       public readonly static string ConnectionString =
 
 
        "Server =localhost; " +
-       "Database = Funder; " +
+       "Database = funder; " +
        "User Id = sa; " +
        "Password = admin!@#123;";
 
+        public FunderDbContext(DbContextOptions<FunderDbContext> options)
+                : base(options)
+        { 
+        
+        }
         protected override void OnConfiguring
             (DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(connectionString);
+            optionsBuilder.UseSqlServer(ConnectionString);
         }
 
 

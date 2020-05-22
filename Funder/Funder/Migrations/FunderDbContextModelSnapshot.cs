@@ -59,8 +59,8 @@ namespace Funder.Migrations
                     b.Property<DateTime>("End")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Goal")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("Goal")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Progress")
                         .HasColumnType("nvarchar(max)");

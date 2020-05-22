@@ -11,6 +11,7 @@ namespace Funder.Services
 
         Project CreateProject(ProjectOption projOption);
         Project FindProjectById(int id);
+        Project Update(ProjectOption projOption, int projId);
         bool DeleteProjectById(int id);
         List<Project> GetAllProjects();
     }

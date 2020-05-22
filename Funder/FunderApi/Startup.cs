@@ -2,9 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Funder.Repository;
+using Funder.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -26,7 +29,31 @@ namespace FunderApi
         {
 
 
-            services.AddControllers();
+            services.AddDbContext<FunderDbContext>(options =>
+                options.UseSqlServer(FunderDbContext.ConnectionString));
+
+
+            services.AddTransient<IUserManager, UserManagement>();
+            services.AddTransient<IProjectManager, ProjectManagement>();
+            //services.AddTransient<IBasketManager, BasketManagement>();
+
+            //The Microsoft.AspNetCore.Mvc.NewtonsoftJson package is needed
+
+            services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling =
+                    Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    );
+            });
+
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +67,8 @@ namespace FunderApi
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseCors("CorsPolicy");
 
             app.UseEndpoints(endpoints =>
             {
