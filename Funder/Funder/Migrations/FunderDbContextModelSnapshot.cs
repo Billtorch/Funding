@@ -19,6 +19,37 @@ namespace Funder.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+            modelBuilder.Entity("Funder.Models.Fund", b =>
+                {
+                    b.Property<int>("FundId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Amount")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FundDate")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("ProjectId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Reward")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("FundId");
+
+                    b.HasIndex("ProjectId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Funds");
+                });
+
             modelBuilder.Entity("Funder.Models.Media", b =>
                 {
                     b.Property<int>("MediaId")
@@ -26,19 +57,21 @@ namespace Funder.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Photo1")
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("MediaPath")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Photo2")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("ProjectId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Photo3")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Video")
+                    b.Property<string>("Type")
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("MediaId");
+
+                    b.HasIndex("ProjectId");
 
                     b.ToTable("Medias");
                 });
@@ -60,13 +93,13 @@ namespace Funder.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("Goal")
-                        .HasColumnType("decimal(18,2)");
+                        .HasColumnType("decimal(18,4)");
+
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Progress")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("ProjectCategoriesId")
-                        .HasColumnType("int");
 
                     b.Property<string>("ProjectName")
                         .HasColumnType("nvarchar(max)");
@@ -77,38 +110,29 @@ namespace Funder.Migrations
                     b.Property<int?>("UserId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("isActive")
-                        .HasColumnType("bit");
-
                     b.HasKey("ProjectId");
-
-                    b.HasIndex("ProjectCategoriesId");
 
                     b.HasIndex("UserId");
 
                     b.ToTable("Projects");
                 });
 
-            modelBuilder.Entity("Funder.Models.ProjectCategories", b =>
+            modelBuilder.Entity("Funder.Models.ProjectCategory", b =>
                 {
-                    b.Property<int>("ProjectCategoriesId")
+                    b.Property<int>("ProjectCategoryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Art")
+                    b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Games")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int?>("ProjectId")
+                        .HasColumnType("int");
 
-                    b.Property<string>("Technology")
-                        .HasColumnType("nvarchar(max)");
+                    b.HasKey("ProjectCategoryId");
 
-                    b.Property<string>("Trending")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("ProjectCategoriesId");
+                    b.HasIndex("ProjectId");
 
                     b.ToTable("ProjectCategories");
                 });
@@ -123,6 +147,9 @@ namespace Funder.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("FundId")
+                        .HasColumnType("int");
+
                     b.Property<string>("High_Tier")
                         .HasColumnType("nvarchar(max)");
 
@@ -132,7 +159,14 @@ namespace Funder.Migrations
                     b.Property<string>("Mid_Tier")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("ProjectId")
+                        .HasColumnType("int");
+
                     b.HasKey("RewardId");
+
+                    b.HasIndex("FundId");
+
+                    b.HasIndex("ProjectId");
 
                     b.ToTable("Rewards");
                 });
@@ -153,26 +187,58 @@ namespace Funder.Migrations
                     b.Property<string>("FirstName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("isActive")
-                        .HasColumnType("bit");
 
                     b.HasKey("Id");
 
                     b.ToTable("Users");
                 });
 
+            modelBuilder.Entity("Funder.Models.Fund", b =>
+                {
+                    b.HasOne("Funder.Models.Project", null)
+                        .WithMany("Funds")
+                        .HasForeignKey("ProjectId");
+
+                    b.HasOne("Funder.Models.User", null)
+                        .WithMany("Funds")
+                        .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("Funder.Models.Media", b =>
+                {
+                    b.HasOne("Funder.Models.Project", null)
+                        .WithMany("Medias")
+                        .HasForeignKey("ProjectId");
+                });
+
             modelBuilder.Entity("Funder.Models.Project", b =>
                 {
-                    b.HasOne("Funder.Models.ProjectCategories", null)
-                        .WithMany("Projects")
-                        .HasForeignKey("ProjectCategoriesId");
-
                     b.HasOne("Funder.Models.User", null)
                         .WithMany("Projects")
                         .HasForeignKey("UserId");
+                });
+
+            modelBuilder.Entity("Funder.Models.ProjectCategory", b =>
+                {
+                    b.HasOne("Funder.Models.Project", null)
+                        .WithMany("ProjectCategories")
+                        .HasForeignKey("ProjectId");
+                });
+
+            modelBuilder.Entity("Funder.Models.Reward", b =>
+                {
+                    b.HasOne("Funder.Models.Fund", null)
+                        .WithMany("Rewards")
+                        .HasForeignKey("FundId");
+
+                    b.HasOne("Funder.Models.Project", "Project")
+                        .WithMany("Rewards")
+                        .HasForeignKey("ProjectId");
                 });
 #pragma warning restore 612, 618
         }

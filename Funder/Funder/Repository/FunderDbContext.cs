@@ -11,12 +11,13 @@ namespace Funder.Repository
         public DbSet<Project> Projects { get; set; }
         public DbSet<Media> Medias { get; set; }
         public DbSet<Reward> Rewards { get; set; }
-        public DbSet<ProjectCategories> ProjectCategories { get; set; }
+        public DbSet<ProjectCategory> ProjectCategories { get; set; }
+        public DbSet<Fund> Funds { get; set; }
 
 
 
 
-       public readonly static string ConnectionString =
+        public readonly static string ConnectionString =
 
 
        "Server =localhost; " +

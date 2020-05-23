@@ -27,7 +27,7 @@ namespace Funder.Services
                 LastName = usrOption.LastName,
                 Email = usrOption.Email,
                 Dob = usrOption.Dob,
-                isActive = true,
+                IsActive = true,
 
             };
 

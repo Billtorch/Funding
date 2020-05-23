@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Funder.Options
 {
-   public class ProjectCategoriesOption
+   public class ProjectCategoryOption
     {
 
         public string Art { get; set; }

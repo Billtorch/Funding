@@ -142,3 +142,7 @@ C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\obj\
 C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\obj\Debug\netcoreapp3.1\FunderMVC.csproj.CoreCompileInputs.cache
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\obj\Debug\netcoreapp3.1\FunderMVC.MvcApplicationPartsAssemblyInfo.cache

@@ -11,5 +11,7 @@ namespace Funder.Models
         public string Low_Tier { get; set; }
         public string Mid_Tier { get; set; }
         public string High_Tier { get; set; }
+
+        public Project Project { get; set; }
     }
 }

@@ -35,7 +35,9 @@ namespace FunderApi
 
             services.AddTransient<IUserManager, UserManagement>();
             services.AddTransient<IProjectManager, ProjectManagement>();
-            //services.AddTransient<IBasketManager, BasketManagement>();
+            services.AddTransient<IRewardManager, RewardManagement>();
+            services.AddTransient<IFundManager, FundManagement>();
+            services.AddTransient<IMediaManager, MediaManagement>();
 
             //The Microsoft.AspNetCore.Mvc.NewtonsoftJson package is needed
 

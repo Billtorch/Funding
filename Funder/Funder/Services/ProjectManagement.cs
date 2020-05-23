@@ -31,7 +31,7 @@ namespace Funder.Services
                 Start = projOption.Start,
                 End = projOption.End,
                 Progress = projOption.Progress,
-                isActive = true,
+                IsActive = true,
                 Category = projOption.Category
 
             };
