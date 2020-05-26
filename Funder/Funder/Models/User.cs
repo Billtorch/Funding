@@ -12,7 +12,8 @@ namespace Funder.Models
         public string LastName { get; set; }
         public string Email { get; set; }
         public DateTime Dob { get; set; }
-        public bool isActive { get; set; }
+        public bool IsActive { get; set; }
         public virtual ICollection<Project> Projects { get; set; }
+        public virtual ICollection<Fund> Funds { get; set; }
     }
 }

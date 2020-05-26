@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funder", "Funder\Funder.csproj", "{3E1698B1-B9CE-49E9-9B9D-68D0A57455FD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunderMVC", "FunderMVC\FunderMVC.csproj", "{4928B087-F916-47CA-86F7-1271C5633B1F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunderMVC", "FunderMVC\FunderMVC.csproj", "{4928B087-F916-47CA-86F7-1271C5633B1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunderApi", "FunderApi\FunderApi.csproj", "{211A4805-5A66-4E05-B386-7D37FFE3965F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{4928B087-F916-47CA-86F7-1271C5633B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4928B087-F916-47CA-86F7-1271C5633B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4928B087-F916-47CA-86F7-1271C5633B1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{211A4805-5A66-4E05-B386-7D37FFE3965F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{211A4805-5A66-4E05-B386-7D37FFE3965F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{211A4805-5A66-4E05-B386-7D37FFE3965F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{211A4805-5A66-4E05-B386-7D37FFE3965F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,7 +4,13 @@ using System.Text;
 
 namespace Funder.Models
 {
-    class Media
+    public class Media
     {
+        public int MediaId { get; set; }
+        public string MediaPath { get; set; }
+        public string Type { get; set; }
+        public DateTime Date{ get; set; }
+
+        
     }
 }
