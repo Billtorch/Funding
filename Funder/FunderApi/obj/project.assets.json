@@ -9103,11 +9103,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\FunderApi\\FunderApi.csproj",
+      "projectUniqueName": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderApi\\FunderApi.csproj",
       "projectName": "FunderApi",
-      "projectPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\FunderApi\\FunderApi.csproj",
+      "projectPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderApi\\FunderApi.csproj",
       "packagesPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\FunderApi\\obj\\",
+      "outputPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin.DESKTOP-G7M5NP7\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -9123,8 +9123,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\Funder\\Funder.csproj": {
-              "projectPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\Funder\\Funder.csproj"
+            "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\Funder\\Funder.csproj": {
+              "projectPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\Funder\\Funder.csproj"
             }
           }
         }

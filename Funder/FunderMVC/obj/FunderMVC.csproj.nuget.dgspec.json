@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\FunderMVC\\FunderMVC.csproj": {}
+    "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderMVC\\FunderMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\FunderMVC\\FunderMVC.csproj": {
+    "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderMVC\\FunderMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\FunderMVC\\FunderMVC.csproj",
+        "projectUniqueName": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderMVC\\FunderMVC.csproj",
         "projectName": "FunderMVC",
-        "projectPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\FunderMVC\\FunderMVC.csproj",
+        "projectPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderMVC\\FunderMVC.csproj",
         "packagesPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\FunderMVC\\obj\\",
+        "outputPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Admin.DESKTOP-G7M5NP7\\AppData\\Roaming\\NuGet\\NuGet.Config",

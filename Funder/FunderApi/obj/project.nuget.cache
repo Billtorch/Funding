@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f1E42uT3ZZZDuh0XTwjZ+TP70jBhHLwMgkxOWN4ZnWTb+m/STgXKv+1ZDnqSRDDcw2bMvzvUYNXcECAx3vAFZA==",
+  "dgSpecHash": "yf04rVu/5/DZ4a1q7S5gF6moQOtyQuI291ON7Ik1yqV7wMFcw63PTA+PgaBGjJNFFf/cCULziVQVTyDCj70i2Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\Source\\Repos\\dotnet-skg-team3-fromtgit\\Funder\\FunderApi\\FunderApi.csproj",
+  "projectFilePath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderApi\\FunderApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin.DESKTOP-G7M5NP7\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Admin.DESKTOP-G7M5NP7\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
