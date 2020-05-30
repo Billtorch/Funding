@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\FunderMVC\\FunderMVC.csproj": {}
+    "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderMVC\\FunderMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\FunderMVC\\FunderMVC.csproj": {
+    "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderMVC\\FunderMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\FunderMVC\\FunderMVC.csproj",
+        "projectUniqueName": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderMVC\\FunderMVC.csproj",
         "projectName": "FunderMVC",
-        "projectPath": "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\FunderMVC\\FunderMVC.csproj",
-        "packagesPath": "C:\\Users\\billt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\FunderMVC\\obj\\",
+        "projectPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderMVC\\FunderMVC.csproj",
+        "packagesPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\billt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin.DESKTOP-G7M5NP7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

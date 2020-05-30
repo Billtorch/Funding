@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\FunderApi\\FunderApi.csproj": {}
+    "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderApi\\FunderApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\FunderApi\\FunderApi.csproj": {
+    "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderApi\\FunderApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\FunderApi\\FunderApi.csproj",
+        "projectUniqueName": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderApi\\FunderApi.csproj",
         "projectName": "FunderApi",
-        "projectPath": "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\FunderApi\\FunderApi.csproj",
-        "packagesPath": "C:\\Users\\billt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\FunderApi\\obj\\",
+        "projectPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderApi\\FunderApi.csproj",
+        "packagesPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\FunderApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\billt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin.DESKTOP-G7M5NP7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -27,8 +27,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\Funder\\Funder.csproj": {
-                "projectPath": "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\Funder\\Funder.csproj"
+              "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\Funder\\Funder.csproj": {
+                "projectPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\Funder\\Funder.csproj"
               }
             }
           }
@@ -93,21 +93,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\Funder\\Funder.csproj": {
+    "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\Funder\\Funder.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\Funder\\Funder.csproj",
+        "projectUniqueName": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\Funder\\Funder.csproj",
         "projectName": "Funder",
-        "projectPath": "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\Funder\\Funder.csproj",
-        "packagesPath": "C:\\Users\\billt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\billt\\source\\repos\\codehub-learn\\dotnet-skg-team3\\Funder\\Funder\\obj\\",
+        "projectPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\Funder\\Funder.csproj",
+        "packagesPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Admin.DESKTOP-G7M5NP7\\source\\Repos\\dotnet-skg-team3-master\\Funder\\Funder\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\billt\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin.DESKTOP-G7M5NP7\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -182,7 +182,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
