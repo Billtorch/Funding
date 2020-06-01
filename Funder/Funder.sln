@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funder", "Funder\Funder.csp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FunderMVC", "FunderMVC\FunderMVC.csproj", "{4928B087-F916-47CA-86F7-1271C5633B1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunderApi", "FunderApi\FunderApi.csproj", "{211A4805-5A66-4E05-B386-7D37FFE3965F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{4928B087-F916-47CA-86F7-1271C5633B1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4928B087-F916-47CA-86F7-1271C5633B1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4928B087-F916-47CA-86F7-1271C5633B1F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{211A4805-5A66-4E05-B386-7D37FFE3965F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{211A4805-5A66-4E05-B386-7D37FFE3965F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{211A4805-5A66-4E05-B386-7D37FFE3965F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{211A4805-5A66-4E05-B386-7D37FFE3965F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

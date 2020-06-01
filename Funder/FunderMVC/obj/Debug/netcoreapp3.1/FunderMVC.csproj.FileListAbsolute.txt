@@ -297,3 +297,11 @@ C:\Users\Admin.DESKTOP-G7M5NP7\source\Repos\dotnet-skg-team3-master\Funder\Funde
 C:\Users\Admin.DESKTOP-G7M5NP7\source\Repos\dotnet-skg-team3-master\Funder\FunderMVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateProject.cshtml.g.cs
 C:\Users\Admin.DESKTOP-G7M5NP7\source\Repos\dotnet-skg-team3-master\Funder\FunderMVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dashboard.cshtml.g.cs
 C:\Users\Admin.DESKTOP-G7M5NP7\source\Repos\dotnet-skg-team3-master\Funder\FunderMVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Project.cshtml.g.cs
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\CreateProject.cshtml.g.cs
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dashboard.cshtml.g.cs
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\Project.cshtml.g.cs
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\obj\Debug\netcoreapp3.1\Razor\Views\Home\AddProject.cshtml.g.cs
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\bin\Debug\netcoreapp3.1\Funder.exe
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\bin\Debug\netcoreapp3.1\Funder.dll
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\bin\Debug\netcoreapp3.1\Funder.pdb
+C:\Users\billt\source\repos\codehub-learn\dotnet-skg-team3\Funder\FunderMVC\obj\Debug\netcoreapp3.1\Razor\Views\User\CreateProject.cshtml.g.cs

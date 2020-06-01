@@ -17,13 +17,13 @@ namespace Funder.Repository
 
 
 
-        public readonly static string ConnectionString =
-
-
-       "Server =localhost; " +
-       "Database = funder; " +
-       "User Id = sa; " +
-       "Password = admin!@#123;";
+        // public  static string connectionString =
+        // "Server =localhost; " +
+        // "Database = funder; " +
+        // "User Id = sa; " +
+        // "Password = admin!@#123;";
+        public readonly static string connectionString=
+            "Server=localhost;Database=funder;User id=sa;Password=admin!@#123;Trusted_Connection=True;MultipleActiveResultSets=true";
 
         public FunderDbContext(DbContextOptions<FunderDbContext> options)
                 : base(options)
@@ -33,7 +33,7 @@ namespace Funder.Repository
         protected override void OnConfiguring
             (DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(ConnectionString);
+            optionsBuilder.UseSqlServer(connectionString);
         }
 
 

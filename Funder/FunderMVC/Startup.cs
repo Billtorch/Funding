@@ -2,8 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Funder.Repository;
+using Funder.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -22,7 +25,27 @@ namespace FunderMVC
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<FunderDbContext>(options =>
+              options.UseSqlServer(FunderDbContext.connectionString));
+
+            services.AddDbContext<FunderDbContext>(options => options.UseSqlServer(FunderDbContext.connectionString));
+
+            services.AddScoped<IUserManager, UserManagement>();
+            services.AddScoped<IFundManager, FundManagement>();
+            services.AddScoped<IMediaManager,MediaManagement>();
+            services.AddScoped<IProjectManager, ProjectManagement>();
+            services.AddScoped<IRewardManager, RewardManagement>();
             services.AddControllersWithViews();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAllOriginsHeadersAndMethods",
+                    builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+            });
+
+            services.AddControllers().AddNewtonsoftJson(options =>
+                options.SerializerSettings.ReferenceLoopHandling =
+                    Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -39,6 +62,7 @@ namespace FunderMVC
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseCors("AllowAllOriginsHeadersAndMethods");
 
             app.UseAuthorization();
 
