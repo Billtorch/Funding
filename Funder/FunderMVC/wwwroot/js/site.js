@@ -10,7 +10,7 @@
         "Category": $('#Category').val()     
         
     }
-
+    console.log(sendData);
     $.ajax({
         url: actionUrl,
         dataType: 'json',
