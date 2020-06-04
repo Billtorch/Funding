@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Funder.Migrations
 {
-    public partial class losfe : Migration
+    public partial class yung : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -58,7 +58,7 @@ namespace Funder.Migrations
                     FundId = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Amount = table.Column<string>(nullable: true),
-                    FundDate = table.Column<string>(nullable: true),
+                    FundDate = table.Column<DateTime>(nullable: false),
                     Reward = table.Column<string>(nullable: true),
                     ProjectId = table.Column<int>(nullable: true),
                     UserId = table.Column<int>(nullable: true)

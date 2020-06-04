@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Funder.Migrations
 {
     [DbContext(typeof(FunderDbContext))]
-    [Migration("20200601194558_Bill")]
-    partial class Bill
+    [Migration("20200604165440_yung")]
+    partial class yung
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

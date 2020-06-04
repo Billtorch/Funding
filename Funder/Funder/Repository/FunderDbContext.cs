@@ -27,7 +27,7 @@ namespace Funder.Repository
             "Database=funder;" +
             "User id=sa;" +
             "Password=admin!@#123;" +
-            "Trusted_Connection=True;MultipleActiveResultSets=true";
+            "Trusted_Connection=False;MultipleActiveResultSets=true";
 
         public FunderDbContext(DbContextOptions<FunderDbContext> options)
                 : base(options)
