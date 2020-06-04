@@ -23,7 +23,11 @@ namespace Funder.Repository
         // "User Id = sa; " +
         // "Password = admin!@#123;";
         public readonly static string connectionString=
-            "Server=localhost;Database=funder;User id=sa;Password=admin!@#123;Trusted_Connection=True;MultipleActiveResultSets=true";
+            "Server=localhost;" +
+            "Database=funder;" +
+            "User id=sa;" +
+            "Password=admin!@#123;" +
+            "Trusted_Connection=True;MultipleActiveResultSets=true";
 
         public FunderDbContext(DbContextOptions<FunderDbContext> options)
                 : base(options)

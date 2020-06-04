@@ -1,4 +1,35 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿function doProjectCreate() {
 
-// Write your JavaScript code.
+    actionMethod = "POST"
+    actionUrl = "/user/project"
+    sendData = {
+        "ProjectName": $('#ProjectName').val(),
+        "Description": $('#Description').val(),
+        "Goal": $('#Goal').val(),
+        
+        "Category": $('#Category').val()     
+        
+    }
+
+    $.ajax({
+        url: actionUrl,
+        dataType: 'json',
+        type: actionMethod,
+        data: JSON.stringify(sendData),
+
+        contentType: 'application/json',
+        processData: false,
+        success: function (data, textStatus, jQxhr) {
+          //  $('#responseDiv').html("The update has been made successfully");
+            alert("Project Created")
+        },
+        error: function (jqXhr, textStatus, errorThrown) {
+            console.log(errorThrown);
+        }
+    });
+
+
+}
+
+
+
