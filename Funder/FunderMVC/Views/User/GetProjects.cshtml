@@ -1,0 +1,44 @@
+﻿@model ProjectViewModel
+@{
+    ViewData["Title"] = "GetProjects";
+}
+
+<h1>GetProjects</h1>
+
+<div class="col-lg-6 col-md-12 col-sm-12">
+    <h2>Project lists</h2>
+    <table class="Projects table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Project Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Progress</th>
+                <th scope="col">Category</th>
+                <th scope="col">Starting date</th>
+                <th scope="col">Ending date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in Model.Projects)
+            {
+            <tr>
+                <th scope="row">@c.ProjectId</th>
+                <td>@c.ProjectName</td>
+                <td>@c.Description</td>
+                <td>@c.Progress</td>
+                <td>@c.Category</td>
+                <td>@c.Start</td>
+                <td>@c.End</td>
+                <td>
+            <a class="nav-link" href="@Url.Action("ProjectDetails", "User", new { id = c.ProjectId })">
+                Details
+            </a>
+        </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+    <h5>Total Projects: @Model.Projects.Count()</h5>
+    <br />
+</div>

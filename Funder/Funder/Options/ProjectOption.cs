@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace Funder.Options
@@ -9,8 +11,10 @@ namespace Funder.Options
 
         public string ProjectName { get; set; }
         public string Description { get; set; }
+        
         public decimal Goal { get; set; }
-        public string Progress { get; set; }
+        
+        public decimal Progress { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }
         public string Category { get; set; }

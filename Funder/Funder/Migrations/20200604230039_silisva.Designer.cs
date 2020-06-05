@@ -4,14 +4,16 @@ using Funder.Repository;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Funder.Migrations
 {
     [DbContext(typeof(FunderDbContext))]
-    partial class FunderDbContextModelSnapshot : ModelSnapshot
+    [Migration("20200604230039_silisva")]
+    partial class silisva
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -26,14 +28,8 @@ namespace Funder.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<decimal>("Amount")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("Amount2")
-                        .HasColumnType("decimal(18,2)");
-
-                    b.Property<decimal>("Amount3")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<string>("Amount")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("FundDate")
                         .HasColumnType("datetime2");

@@ -21,21 +21,45 @@ namespace Funder.Services
         //CRUD
         // create read update delete
 
-        public Project CreateProject(ProjectOption projOption)
+        public Project CreateProject(CreateProjectOption createProjectOption)
         {
             Project project = new Project
             {
-                ProjectName = projOption.ProjectName,
-                Description = projOption.Description,
-                Goal = projOption.Goal,
-                Start = projOption.Start,
-                End = projOption.End,
-                Progress = projOption.Progress,
+                ProjectName = createProjectOption.ProjectName,
+                Description = createProjectOption.Description,
+                Goal = createProjectOption.Goal,
+                End = createProjectOption.End,
+                Progress = createProjectOption.Progress,
                 IsActive = true,
-                Category = projOption.Category
+                Category = createProjectOption.Category,
+                Funds = new List<Fund>
+                {
+                    new Fund
+                    {
+                        Amount=createProjectOption.Amount,
+                        
+
+                    },
+                    new Fund
+                    {
+                        Amount=createProjectOption.Amount,
+
+
+                    },
+                    new Fund
+                    {
+                        Amount=createProjectOption.Amount,
+
+
+                    }
+
+            },
+
+                //Fund fund = new Fund { 
+
+                //    Amount = FundOption.Amound
 
             };
-
             db.Projects.Add(project);
             db.SaveChanges();
 
@@ -46,7 +70,7 @@ namespace Funder.Services
         {
 
             return db.Projects.Find(projectId);
-        }  
+        }
 
 
         public Project Update(ProjectOption projOption, int projectId)

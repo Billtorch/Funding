@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Funder.Migrations
 {
-    public partial class yung : Migration
+    public partial class silisva : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -32,8 +32,8 @@ namespace Funder.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     ProjectName = table.Column<string>(nullable: true),
                     Description = table.Column<string>(nullable: true),
-                    Goal = table.Column<decimal>(type: "decimal(18,4)", nullable: false),
-                    Progress = table.Column<string>(nullable: true),
+                    Goal = table.Column<decimal>(nullable: false),
+                    Progress = table.Column<decimal>(nullable: false),
                     Start = table.Column<DateTime>(nullable: false),
                     End = table.Column<DateTime>(nullable: false),
                     IsActive = table.Column<bool>(nullable: false),

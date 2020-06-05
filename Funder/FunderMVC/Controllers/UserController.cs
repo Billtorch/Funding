@@ -1,8 +1,10 @@
 ﻿using Funder.Models;
 using Funder.Options;
 using Funder.Services;
+using FunderMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Linq;
 
 namespace FunderMVC.Controllers
 {
@@ -77,9 +79,9 @@ namespace FunderMVC.Controllers
         }
 
         [HttpPost("project")]
-        public Project PostProject([FromBody]ProjectOption projOpt)
+        public Project PostProject([FromBody]CreateProjectOption createProjectOption)
         {
-            return projMangr.CreateProject(projOpt);
+            return projMangr.CreateProject(createProjectOption);
         }
 
         [HttpPut("project/{id}")]
@@ -94,7 +96,30 @@ namespace FunderMVC.Controllers
             return projMangr.DeleteProjectById(id);
         }
 
+        [HttpGet("GetProjects")]
+        public IActionResult GetProjects()
+        {
+            var projects = new ProjectViewModel
+            {
+                Projects = projMangr.GetAllProjects().ToList()
+ 
+            };
+            return View(projects);
+        }
 
+       [HttpGet,Route("ProjectDetails/{projectId}")]
+       
+        public IActionResult ProjectDetails([FromRoute]int projectId)
+        {
+
+            ProjectDetailsViewModel projectDetails = new ProjectDetailsViewModel
+            {
+
+                Project = projMangr.FindProjectById(projectId)
+            };
+
+            return View(projectDetails);          
+        }
 
 
 

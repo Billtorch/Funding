@@ -14,9 +14,10 @@ namespace Funder.Models
         public string ProjectName { get; set; }
         public string Description { get; set; }
        
-        [Column(TypeName = "decimal(18,4)")]
+        [Column(TypeName = "decimal(18,2)")]
         public decimal Goal { get; set; }
-        public string Progress { get; set; }
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal Progress { get; set; }
         public DateTime Start { get; set; }
         public DateTime End { get; set; }  
         public bool IsActive { get; set; }
@@ -26,6 +27,12 @@ namespace Funder.Models
         public virtual ICollection<Media> Medias { get; set; }
         public virtual ICollection<ProjectCategory> ProjectCategories{ get; set; }
         public virtual ICollection<Reward> Rewards { get; set; }
+        public Project()
+        {
+            Start = DateTime.Now;
+            Progress = 0;
+        }
+
 
     }
 }

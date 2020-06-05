@@ -6,7 +6,10 @@
         "ProjectName": $('#ProjectName').val(),
         "Description": $('#Description').val(),
         "Goal": $('#Goal').val(),
-        
+        "End": $('#End').val(),
+        "Amount": parseFloat($('#Amount').val()),
+        "Amount": parseFloat($('#Amount').val()),
+        "Amount": parseFloat($('#Amount').val()),
         "Category": $('#Category').val()     
         
     }

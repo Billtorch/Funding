@@ -1,0 +1,40 @@
+﻿@model ProjectDetailsViewModel
+
+@{
+    ViewData["Title"] = "ProjectDetails";
+}
+
+<h1>ProjectDetails</h1>
+
+<div class="col-lg-6 col-md-12 col-sm-12">
+    <h2>Project Details</h2>
+    <table class="Projects table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Project Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Progress</th>
+                <th scope="col">Category</th>
+                <th scope="col">Starting date</th>
+                <th scope="col">Ending date</th>
+            </tr>
+        </thead>
+        <tbody>
+           
+                <tr>
+                    <th scope="row">@Model.Project.ProjectId</th>
+                    <td>@Model.Project.ProjectName</td>
+                    <td>@Model.Project.Description</td>
+                    <td>@Model.Project.Progress</td>
+                    <td>@Model.Project.Category</td>
+                    <td>@Model.Project.Start</td>
+                    <td>@Model.Project.End</td>
+                    
+                </tr>
+            
+        </tbody>
+    </table>
+    
+    <br />
+</div>
