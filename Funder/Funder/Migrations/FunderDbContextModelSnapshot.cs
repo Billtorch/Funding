@@ -26,11 +26,17 @@ namespace Funder.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Amount")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("Amount")
+                        .HasColumnType("decimal(18,2)");
 
-                    b.Property<string>("FundDate")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("Amount2")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("Amount3")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("FundDate")
+                        .HasColumnType("datetime2");
 
                     b.Property<int?>("ProjectId")
                         .HasColumnType("int");
@@ -93,13 +99,13 @@ namespace Funder.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<decimal>("Goal")
-                        .HasColumnType("decimal(18,4)");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<bool>("IsActive")
                         .HasColumnType("bit");
 
-                    b.Property<string>("Progress")
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<decimal>("Progress")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("ProjectName")
                         .HasColumnType("nvarchar(max)");

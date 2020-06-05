@@ -9,7 +9,7 @@ namespace Funder.Services
    public interface IProjectManager
     {
 
-        Project CreateProject(ProjectOption projOption);
+        Project CreateProject(CreateProjectOption createProjectOption);
         Project FindProjectById(int id);
         Project Update(ProjectOption projOption, int projId);
         bool DeleteProjectById(int id);
